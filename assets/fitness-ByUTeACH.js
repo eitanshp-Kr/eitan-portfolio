@@ -1,0 +1,1 @@
+import{t as e}from"./main-6kmbe6SM.js";var t=document.querySelector(`#open-demo`);t&&(t.href=e),document.querySelector(`#fitness-frame`),document.querySelector(`#fitness-fallback`);
