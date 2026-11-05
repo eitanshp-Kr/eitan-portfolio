@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>אפליקציית כושר — איתן שפרלינג</title>
-  <meta name="description" content="הדגמה של אפליקציית הכושר. ההדגמה החיה נפתחת בחלון נפרד.">
+  <meta name="description" content="הדגמה של אפליקציית הכושר. ההדגמה החיה רצה כאן, בדיוק כמו באפליקציה עצמה.">
   <meta name="theme-color" content="#FAFAFA">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <script type="module" crossorigin src="/eitan-portfolio/assets/fitness-DMb1WEmT.js"></script>
-  <link rel="modulepreload" crossorigin href="/eitan-portfolio/assets/main-CaisNghM.js">
-  <link rel="stylesheet" crossorigin href="/eitan-portfolio/assets/main-BseRr36W.css">
+  <script type="module" crossorigin src="/eitan-portfolio/assets/fitness-DMV4sBXb.js"></script>
+  <link rel="modulepreload" crossorigin href="/eitan-portfolio/assets/main-VDcriU93.js">
+  <link rel="stylesheet" crossorigin href="/eitan-portfolio/assets/main-xvh0I7WK.css">
 </head>
 <body>
 <a class="skip" href="#content">דילוג לתוכן</a>
@@ -21,10 +21,16 @@
 <main id="content" class="fit wrap">
   <p class="back"><a class="link" href="../">חזרה לפורטפוליו</a></p>
   <h1>אפליקציית כושר</h1>
-  <p class="lede">מעקב אימונים, תזונה ומפת גוף. ההדגמה החיה נפתחת בחלון נפרד.</p>
-  <div class="phone">
-    <div class="phone-screen">
-      <div id="fitness-fallback">
+  <p class="lede">מעקב אימונים, תזונה ומפת גוף. ההדגמה החיה רצה כאן, בדיוק כמו באפליקציה עצמה.</p>
+  <div class="fit-stage" id="fit-stage" data-mode="desktop">
+    <div class="fit-toolbar" role="group" aria-label="תצוגת ההדגמה">
+      <button type="button" class="seg" data-mode="desktop" aria-pressed="true">תצוגת מחשב</button>
+      <button type="button" class="seg" data-mode="phone" aria-pressed="false">תצוגת טלפון</button>
+    </div>
+    <div class="device">
+      <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span class="device-url">fitness-demo-ayh.pages.dev</span></div>
+      <div class="device-screen">
+        <div id="fitness-fallback">
         <div class="island" aria-hidden="true"></div>
         <p class="phone-hi">שלום</p>
         <p class="phone-date">היום</p>
@@ -50,8 +56,10 @@
           <span>תזונה</span>
         </div>
       </div>
-      <iframe id="fitness-frame" title="הדגמת אפליקציית הכושר" hidden></iframe>
+        <iframe id="fitness-frame" title="הדגמת אפליקציית הכושר" allow="autoplay" hidden></iframe>
+      </div>
     </div>
+    <p class="fit-note">נתוני דוגמה ציבוריים. כל מה שמוסיפים בהדגמה גלוי לכל מי שפותח אותה.</p>
   </div>
   <p class="fit-actions"><a class="button" id="open-demo" href="https://fitness-demo-ayh.pages.dev" target="_blank" rel="noopener noreferrer">פתיחת ההדגמה</a></p>
 </main>
