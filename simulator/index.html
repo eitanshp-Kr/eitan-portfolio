@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הסימולטור — איתן שפרלינג</title>
+  <meta name="description" content="שיחה עם סוכן סימולטור התרחישים. מזינים מצב ומקבלים תשובה מסודרת.">
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <script type="module" crossorigin src="/assets/simulator-Dygsx4qE.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-CPPx_dL-.js">
+  <link rel="stylesheet" crossorigin href="/assets/main--uJberVp.css">
+</head>
+<body>
+<a class="skip" href="#content">דילוג לתוכן</a>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="ראשי">
+    <div class="nav-group"><a class="nav-btn" href="../" aria-label="בית"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span class="tip" role="tooltip">בית</span></a><a class="nav-btn" href="../projects/" aria-label="פרויקטים"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10"/><path d="M5 6h14"/><rect x="3" y="10" width="18" height="12" rx="2"/></svg><span class="tip" role="tooltip">פרויקטים</span></a><a class="nav-btn" href="../simulator/" aria-label="הסימולטור" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="tip" role="tooltip">הסימולטור</span></a><a class="nav-btn" href="../about/" aria-label="אודות"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg><span class="tip" role="tooltip">אודות</span></a></div>
+  </nav>
+</header>
+<main id="content" class="sim">
+  <div class="sim-col">
+    <header class="sim-head">
+      <div>
+        <h1>הסימולטור</h1>
+        <p class="lede">שיחה עם סוכן סימולטור התרחישים. מזינים מצב, ומקבלים תשובה מסודרת.</p>
+      </div>
+      <p class="status" id="status"><span class="dot" aria-hidden="true"></span><span id="status-text">ממתין</span></p>
+    </header>
+    <div id="thread" class="thread" role="log" aria-live="polite" aria-relevant="additions">
+      <article class="bubble-agent">
+        <h3>אפשר להתחיל</h3>
+        <p>תארו תרחיש חופשי, או בחרו אחת ההצעות. התשובה מופיעה ככרטיס, והפלט האחרון נשמר למטה.</p>
+        <ul>
+          <li>מה קרה</li>
+          <li>מי מעורב</li>
+          <li>מה הייתם רוצים שיקרה עכשיו</li>
+        </ul>
+      </article>
+    </div>
+    <section class="output" aria-labelledby="output-label">
+      <h2 id="output-label">פלט</h2>
+      <div id="output" class="output-body" aria-live="polite">הפלט האחרון יופיע כאן.</div>
+    </section>
+    <div class="chips" role="group" aria-label="תרחישים מוכנים">
+      <button class="chip" type="button" data-scenario="עיכוב באספקה">עיכוב באספקה</button>
+      <button class="chip" type="button" data-scenario="לקוח לא מרוצה">לקוח לא מרוצה</button>
+      <button class="chip" type="button" data-scenario="השקה שקטה">השקה שקטה</button>
+      <button class="chip" type="button" data-scenario="עומס פתאומי">עומס פתאומי</button>
+      <button class="chip" type="button" data-scenario="שיחת תיאום">שיחת תיאום</button>
+    </div>
+    <form class="composer" id="composer">
+      <label for="scenario-input">קלט תרחיש</label>
+      <textarea id="scenario-input" name="input" rows="4" placeholder="תארו את המצב בקצרה"></textarea>
+      <p class="form-error" id="form-error" hidden>כתבו תרחיש לפני השליחה.</p>
+      <div class="composer-row">
+        <p class="hint">אנטר שולח · שיפט ואנטר שורה חדשה</p>
+        <button class="send" id="send" type="submit">שליחה</button>
+      </div>
+    </form>
+  </div>
+</main>
+<footer class="site-footer wrap">
+  <a class="link" data-contact href="mailto:">אימייל ליצירת קשר</a>
+</footer>
+</body>
+</html>
